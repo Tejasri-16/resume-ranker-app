@@ -27,7 +27,7 @@ st.set_page_config(
 def load_spacy_model():
     """Load the spaCy NLP model."""
     try:
-        nlp = spacy.load("en_core_web_lg")
+        nlp = spacy.load("en_core_web_sm")
         return nlp
     except OSError:
         st.error("SpaCy model not found. Please run 'python -m spacy download en_core_web_lg'")
